@@ -110,8 +110,11 @@
           color: white;
         }
                 </style>
+
+                
 </head>
 <body>
+
     <!-- Header -->
     <header id="bringer-header" class="is-frosted is-sticky" data-appear="fade-down" data-unload="fade-up">
         <!-- Desktop Header -->
@@ -852,8 +855,231 @@
   </script>
   
 
+
+  <!-- Section: Portfolio Carousel -->
+<!-- Section: Portfolio Carousel -->
+<!-- Link Swiper's CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+/* Portfolio Carousel CSS */
+.bringer-carousel {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.bringer-portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.bringer-portfolio-card-image img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.bringer-portfolio-card-image img:hover {
+  transform: scale(1.05);
+}
+
+.bringer-portfolio-card-title h6 {
+  margin: 10px 0;
+}
+
+.bringer-portfolio-card-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.swiper-pagination.bringer-dots {
+  position: static;
+  margin-top: 10px;
+}
+</style>
+
+<!-- our work Carousel -->
+
+
+<div class="swiper bringer-carousel" style="margin-top: 80px;">
+  <div class="stg-row bringer-section-title is-boxed">
+
+    <div class="stg-col-8 stg-offset-2">
+        <div class="align-center">
+            <h2 id='portfolio' data-appear="fade-up" data-unload="fade-up">Our Work</h2>
+            <p class="bringer-large-text" data-appear="fade-up" data-unload="fade-up" data-delay="100">We are proud of our work, and we are always looking for new challenges. Take a look at some of our recent portfolio:</p>
+        </div>
+    </div>
+  </div>
+  <div class="swiper-wrapper">
+    <!-- Card Item 01 -->
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="penpal" src="images/penpal.jpeg" alt="PenPal">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Branding</span>
+          <h6>PenPal</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>  
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="omnilearn" src="images/omnilearn.jpg" alt="Omnilearn LMS">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Advertising</span>
+          <h6>Omnilearn LMS</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="aiconnect" src="images/ai-bpo.jpeg" alt="AI Connect-Caller">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Marketing</span>
+          <h6>AI Connect-Caller</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="zuhd" src="images/zuhd.jpeg" alt="ZUHD">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Advertising</span>
+          <h6>ZUHD</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="bakery" src="images/bakery.jpeg" alt="Bakery Hill Dental">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Marketing</span>
+          <h6>Bakery Hill Dental</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="klientas" src="images/klientas.jpeg" alt="Klientas">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Marketing</span>
+          <h6>Klientas</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="aljash" src="images/download.png" alt="Al-Jash Trading">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Marketing</span>
+          <h6>Al-Jash Trading</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+    <div class="bringer-block bringer-portfolio-card swiper-slide">
+      <div class="bringer-portfolio-card-image">
+        <img id="shopoptica" src="images/shopoptica.jpeg" alt="Shop Optica">
+      </div>
+      <div class="bringer-portfolio-card-footer">
+        <div class="bringer-portfolio-card-title">
+          <span class="bringer-meta">Marketing</span>
+          <h6>Shop Optica</h6>
+        </div>
+        <span class="bringer-icon bringer-icon-explore"></span>
+      </div>
+    </div>
+                        
+    
+    <!-- Repeat for other items... -->
+  </div>
+  <!-- Pagination -->
+  <div class="swiper-pagination bringer-dots"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var bringerCarousel = new Swiper('.bringer-carousel', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination.bringer-dots',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.5,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        }
+      }
+    });
+
+    // Image click event for expansion
+    document.querySelectorAll('.bringer-portfolio-card-image img').forEach(function(image) {
+      var originalWidth = image.width;
+      var originalHeight = image.height;
+      var isExpanded = false;
+
+      image.addEventListener('click', function() {
+        if (isExpanded) {
+          image.style.width = originalWidth + 'px';
+          image.style.height = originalHeight + 'px';
+          isExpanded = false;
+        } else {
+          image.style.width = "1200px";
+          image.style.height = "1200px";
+          isExpanded = true;
+        }
+      });
+    });
+  });
+</script>
+
+
             <!-- Section: About Us -->
-            <section class="backlight-bottom divider-top">
+            <section class="backlight-bottom divider-top" style="margin-top: 80px;">
                 <div class="stg-row stg-large-gap stg-valign-middle stg-tp-column-reverse">
                     <div class="stg-col-6" data-appear="fade-right" data-unload="fade-left">
                         <h3>Challenge To All!</h3>
@@ -955,6 +1181,103 @@
                     <a href="portfolio-slider.html" class="bringer-button" style="background-color: #000; color: #fff;">Explore More</a>
                 </div>
             </section>
+
+
+            <section data-padding="bottom">
+              <div class="stg-row bringer-section-title is-boxed">
+
+                <div class="stg-col-8 stg-offset-2">
+                    <div class="align-center">
+                        <h2 id='portfolio' data-appear="fade-up" data-unload="fade-up">Learn With TechRealm</h2>
+                        <p class="bringer-large-text" data-appear="fade-up" data-unload="fade-up" data-delay="100">We are proud of our work, and we are always looking for new challenges. Take a look at some of our recent portfolio:</p>
+                    </div>
+                </div>
+              </div>
+<style>
+      
+  .wrapper1 {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 3vw;
+    
+    iframe {
+      width: 30vw;
+      height: 16.5vw;
+    }
+  }</style>
+
+
+<div style="display: flex; align-content: center; justify-content: space-around; margin-bottom: 3vw; gap: 2vw;">
+  <div id="player1" style="width: 30vw; height: 16.5vw;"></div>
+  <div id="player2" style="width: 30vw; height: 16.5vw;"></div>
+  <div id="player3" style="width: 30vw; height: 16.5vw;"></div>
+</div>
+
+<div style="display: flex; align-content: center; justify-content: space-around; margin-bottom: 3vw; gap: 2vw;">
+  <div id="player4" style="width: 30vw; height: 16.5vw;"></div>
+  <div id="player5" style="width: 30vw; height: 16.5vw;"></div>
+  <div id="player6" style="width: 30vw; height: 16.5vw;"></div>
+</div>
+<div class="btn-area d-flex justify-content-center align-items-center mt-5 mt-sm-0" style="height: 100vh;">
+  <a href="#!" class="see-all-btn">
+    Get a Free Quote
+  </a>
+</div>
+
+  <script>
+      var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var playerInfoList = [{
+id: 'player1',
+videoId: 'rWtfClpWSb8'
+}, {
+id: 'player2',
+videoId: 'mop6g-c5HEY'
+}, {
+id: 'player3',
+videoId: 'mDKM-JtUhhc'
+}, {
+id: 'player4',
+videoId: '5QR-dG68eNE'
+}, {
+id: 'player5',
+videoId: 'fo4e3njyGy0'
+}, {
+id: 'player6',
+videoId: 'Ft2qs7tOW1k'
+}];
+
+function onYouTubeIframeAPIReady() {
+if (typeof playerInfoList === 'undefined') return;
+
+for (var i = 0; i < playerInfoList.length; i++) {
+  var curplayer = createPlayer(playerInfoList[i]);
+  players[i] = curplayer;
+}
+}
+
+var players = new Array();
+
+function createPlayer(playerInfo) {
+return new YT.Player(playerInfo.id, {
+  videoId: playerInfo.videoId,
+  playerVars: {
+    showinfo: 0,
+  }
+});
+}
+
+$('#stop').click(function () {
+players.forEach(function (el) {
+  el.stopVideo();
+});
+});
+      </script>
+</section>
 
             <!-- Section: CTA -->
             <section data-padding="bottom">

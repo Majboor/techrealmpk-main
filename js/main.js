@@ -477,7 +477,7 @@ jQuery(function ($) {
                         // Active slide is at the center
                         options.centeredSlides = true;
                         // Spacing
-                        options.spaceBetween = parseInt($this.css('--swiper-gap'));
+                        options.spaceBetween = parseInt($this.css('--swiper-gap1'));
                         // Effect
                         if ( $this.attr('data-effect') !== undefined ) {
                             options.effect = $this.attr('data-effect');
@@ -1270,7 +1270,7 @@ jQuery(function ($) {
 
         // Elements
         BlocksHighlight();
-        SwiperGallery();
+        // SwiperGallery();
         Marquee();
         Counters();
         ListWithPreview();
